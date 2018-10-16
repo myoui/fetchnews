@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 class NewsLink extends Component {
     render() {
         return(
-            <div>
+            <div onClick={() => window.scrollTo({top:0,behavior:"smooth"})}>
                 <Link to={this.props.link}>
                     <div className='selector'>{this.props.name}</div>
                 </Link>

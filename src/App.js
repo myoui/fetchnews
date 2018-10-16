@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Redirect } from 'react-router-dom'
+import { Route, Redirect, Switch } from 'react-router-dom'
 import {  } from 'react-spring';
 import { Row, Column } from 'simple-flexbox';
 import { NavBar } from "./sidebar";
@@ -16,8 +16,10 @@ class App extends Component {
           <NavBar/>
         </Column>
         <Column>
-          <Route exact path="/" render={() => <Redirect to="/usnews"/>}/>
-          <Route path="/:source" component={News} />          
+          <Switch>
+            <Route exact path="/" render={() => <Redirect to="/usnews"/>}/>
+            <Route path="/:source" component={News} />
+          </Switch>
         </Column>
       </Row>
       </div>
