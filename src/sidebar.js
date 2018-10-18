@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
-
+import { Link } from 'react-router-dom';
+import { isMobile } from 'is-mobile';
 
 class NewsLink extends Component {
     render() {
@@ -15,13 +15,22 @@ class NewsLink extends Component {
 
 
 export class NavBar extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { mobile: false }
+    }
+
+    componentDidMount() {
+        this.setState({mobile: isMobile.isMobile()})
+    }
+
     render() {
         return (
             <div className='navBar'>
                 <NewsLink link="usnews" name="Top US News"/>
-                <NewsLink link="cnn" name="CNN (USA)"/>
-                <NewsLink link="bbc" name="BBC (UK)"/>
-                <NewsLink link="washpost" name="Washington Post (USA)"/>
+                <NewsLink link="cnn" name="CNN"/>
+                <NewsLink link="bbc" name="BBC"/>
+                <NewsLink link="washpost" name="Washington Post"/>
                 <NewsLink link="espn" name="ESPN"/>
                 <NewsLink link="engadget" name="Engadget"/>
             </div>

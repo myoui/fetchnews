@@ -1,9 +1,8 @@
 .App {
   margin: auto;
-  width: 900px;
+  width: 800px;
   font-family: Arial;
   color: white;
-  background-color: black;
 }
 a:link {
   color: white;
@@ -25,18 +24,16 @@ img {
 .navBar {
   position: sticky;
   top: 0%;
-  width: 200px;
+  width: 150px;
   height: 100vh;
   border-spacing: 10%;
   background-color: rgb(136, 136, 136);
 }
 
 .content {
-  align-content: center;
-  width: 100%;
-  border: 1px blue dashed;
+  /* border: 1px blue dashed; */
+  margin: 5px;
 }
-
 .selector {
   border: 1px white solid;
   background-color: rgb(136, 136, 136);
@@ -54,11 +51,10 @@ img {
 
 .article {
   background-color: rgb(136, 136, 136);
-  margin: auto;
   margin-bottom: 15px;
+  margin-left: 17px;
   padding: 15px;
   width: 90%;
-  
 }
 .artTitle {
   font-size: 130%;
