@@ -1,6 +1,7 @@
 .App {
   margin: auto;
-  width: 800px;
+  margin-top: 20px;
+  width: 900px;
   font-family: Arial;
   color: white;
 }
@@ -26,6 +27,14 @@ img {
   top: 0%;
   width: 150px;
   height: 100vh;
+  padding: 2px;
+  background-color: rgb(136, 136, 136);
+}
+.navBarMob {
+  position: sticky;
+  margin: auto;
+  top: 0%;
+  width: 900px;
   border-spacing: 10%;
   background-color: rgb(136, 136, 136);
 }
@@ -37,11 +46,14 @@ img {
 .selector {
   border: 1px white solid;
   background-color: rgb(136, 136, 136);
-  padding-top: 20px;
-  height: 40px;
-  margin: 5px;
+  height: 50px;
+  width: 147px;
+  padding-top: 10%;
+  margin: auto;
   text-align: center;
-  transition: .5s background-color, .25s height;
+  vertical-align: middle;
+  font-size: 130%;
+  transition: 1.5s background-color;
 }
 .selector:hover {
   transition: 1.5s background-color, .5s transform;
@@ -57,7 +69,8 @@ img {
   width: 90%;
 }
 .artTitle {
-  font-size: 130%;
+  font-size: 175%;
+  text-align: center;
 }
 .artDate {
   text-align: right;
