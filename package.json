@@ -1,6 +1,6 @@
 {
   "name": "fetchnews",
-  "homepage": "http://myoui.github.io/fetchnews/",
+  "homepage": "http://myoui.github.io/fetchnews",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
