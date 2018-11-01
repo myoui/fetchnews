@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/fetchnews/static/js/runtime~main.9ba95e36.js"
   },
   {
-    "revision": "cf79d9fcca158fd785af",
-    "url": "/fetchnews/static/js/main.cf79d9fc.chunk.js"
+    "revision": "cad9689ff2a7a3bfbd98",
+    "url": "/fetchnews/static/js/main.cad9689f.chunk.js"
   },
   {
     "revision": "f7a9e39bcedd4736a2fe",
     "url": "/fetchnews/static/js/1.f7a9e39b.chunk.js"
   },
   {
-    "revision": "cf79d9fcca158fd785af",
+    "revision": "cad9689ff2a7a3bfbd98",
     "url": "/fetchnews/static/css/main.455360cd.chunk.css"
   },
   {
-    "revision": "1c2dd7ca556489162dd05d5a18ce9aab",
+    "revision": "1ae636773beb35e881a2648eef42994a",
     "url": "/fetchnews/index.html"
   }
 ];
