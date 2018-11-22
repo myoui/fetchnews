@@ -31,5 +31,8 @@
   ],
   "devDependencies": {
     "gh-pages": "^2.0.1"
+  },
+  "standard": {
+    "parser": "babel-eslint"
   }
 }
