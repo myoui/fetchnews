@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-const fetch = require('node-fetch')
 
 const sourcesKey = {
   usnews: 'country=us',
@@ -32,7 +31,7 @@ export class News extends Component {
     fetchArticles = () => {
       const apiKey = this.state.exApi !== '' ? this.state.exApi : this._api
       console.log(`calling fetchArticles() ${new Date().toTimeString()}`)
-      fetch(`https://newsapi.org/v2/top-headlines?${sourcesKey[this.props.match.params.source]}&apiKey=${apiKey}`).then(
+      window.fetch(`https://newsapi.org/v2/top-headlines?${sourcesKey[this.props.match.params.source]}&apiKey=${apiKey}`).then(
         response => response.json()).then(
         json => this.parseArticles(json))
     }
@@ -61,7 +60,7 @@ export class News extends Component {
           url: json.url,
           urlToImage: json.urlToImage
         }
-        fetch(this.state.artDb, {
+        window.fetch(this.state.artDb, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
